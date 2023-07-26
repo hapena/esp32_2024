@@ -1,0 +1,1 @@
+from machine import ADC,Pinimport timeled=Pin(5,Pin.OUT) adc0=ADC(Pin(36))               #create ADC objectwhile True:  print("adc0=",adc0.read())    #Read ADC value  time.sleep(0.5)  led.value(1)            time.sleep(0.5)  led.value(0)              time.sleep(0.5)    
